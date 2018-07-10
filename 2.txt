@@ -1,1 +1,29 @@
-11111
+>本地仓库master
+git add 1.txt
+git commit -m "注释"
+git status
+
+git reset --hard HEAD ^
+git reset --hard HEAD ^^
+git reset --hard HEAD ~100
+git checkout -- 1.txt
+
+>远程仓库
+git remote add origin https://github.com/PanpanDu/testgit.git
+git push -u origin master#第一次
+git push origin master
+
+>远程更新到本地
+git clone https://github.com/PanpanDu/testgit2
+
+>分支
+git checkout -b dev#创建和切换
+git branch
+git checkout master
+cat 1.txt
+git merge dev
+
+git branch -d dev#删除
+
+
+
